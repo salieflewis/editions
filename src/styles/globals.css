@@ -1,0 +1,69 @@
+* {
+  font-weight: 300;
+  font-family: Arial;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  width: 100vp;
+  border-bottom: 1px solid #d3d3d3;
+  position: sticky;
+  top: 0;
+  background: white;
+  height: 72px;
+}
+
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100vp;
+}
+
+.card-image {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 256px;
+  height: 256px;
+  margin: 16px;
+  object-fit: cover;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+}
+
+.token-name {
+  font-weight: 600;
+}
+
+.card-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.feed-card {
+  /* align-content: center; */
+}
+
+.data-card {
+  border: 1px solid #d3d3d3;
+  padding: 32px;
+  margin: 8px;
+}
