@@ -14,13 +14,11 @@ const Purchase = (address, price) => {
 
   const { data, isError, isLoading, write } =
     useContractWrite({
-      addressOrName:
-        '0x2df53f0f4ad5e26fb71e67d39889ecfac984dd1c',
+      addressOrName: address,
       contractInterface: ERC721Drop,
       functionName: 'purchase',
       args: [price],
     });
-
 
   //   const { data, error, isLoading } = useContractRead({
   //     addressOrName:

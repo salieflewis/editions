@@ -1,6 +1,5 @@
 import '../styles/globals.css';
 
-
 import {
   useAccount,
   useConnect,
@@ -11,9 +10,6 @@ import {
 
 const Connect = () => {
   const { address, connector, isConnected } = useAccount();
-  // const { data: ensAvatar } = useEnsAvatar({
-  //   addressOrName: address,
-  // });
   const { data: ensName } = useEnsName({ address });
   const {
     connect,
@@ -27,11 +23,9 @@ const Connect = () => {
   if (isConnected) {
     return (
       <div>
-        {/* <img src={ensAvatar} alt='ENS Avatar' /> */}
         <div>
           {ensName ? `${ensName} (${address})` : address}
         </div>
-        {/* <div>Connected to {connector.name}</div> */}
         <button onClick={disconnect}>Disconnect</button>
       </div>
     );

@@ -11,7 +11,7 @@
     "graphql": "^16.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-ipfs-image": "^0.3.2",
+    "react-ipfs-image": "^0.6.0",
     "react-scripts": "5.0.1",
     "wagmi": "^0.5.9",
     "web-vitals": "^2.1.0"
